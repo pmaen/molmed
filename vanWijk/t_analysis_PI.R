@@ -3,5 +3,4 @@ group <- c("none","none","none","none","none","none","none + NSA","none + NSA","
 
 my_data = data.frame(value, group)
 
-#subsequent pairwise wilcox test to identify which groups are different
 pairwise.t.test(value, group, p.adjust="bonferroni", pool.sd=FALSE, paired=FALSE)
