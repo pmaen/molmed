@@ -154,6 +154,47 @@ t30.pe.3.heights <-
   subset(mean_heights_df, timepoint == 'T30' &
            group == 'PE' & well == '3')$value
 
+#Subset SD of peak heights for different conditions
+t0.ctrl.1.heights.sd <-
+  subset(sd_heights_df, timepoint == 'T0' &
+           group == 'CTRL' & well == '1')$value
+t0.ctrl.2.heights.sd <-
+  subset(sd_heights_df, timepoint == 'T0' &
+           group == 'CTRL' & well == '2')$value
+t0.ctrl.3.heights.sd <-
+  subset(sd_heights_df, timepoint == 'T0' &
+           group == 'CTRL' & well == '3')$value
+
+t30.ctrl.1.heights.sd <-
+  subset(sd_heights_df, timepoint == 'T30' &
+           group == 'CTRL' & well == '1')$value
+t30.ctrl.2.heights.sd <-
+  subset(sd_heights_df, timepoint == 'T30' &
+           group == 'CTRL' & well == '2')$value
+t30.ctrl.3.heights.sd <-
+  subset(sd_heights_df, timepoint == 'T30' &
+           group == 'CTRL' & well == '3')$value
+
+t0.pe.1.heights.sd <-
+  subset(sd_heights_df, timepoint == 'T0' &
+           group == 'PE' & well == '1')$value
+t0.pe.2.heights.sd <-
+  subset(sd_heights_df, timepoint == 'T0' &
+           group == 'PE' & well == '2')$value
+t0.pe.3.heights.sd <-
+  subset(sd_heights_df, timepoint == 'T0' &
+           group == 'PE' & well == '3')$value
+
+t30.pe.1.heights.sd <-
+  subset(sd_heights_df, timepoint == 'T30' &
+           group == 'PE' & well == '1')$value
+t30.pe.2.heights.sd <-
+  subset(sd_heights_df, timepoint == 'T30' &
+           group == 'PE' & well == '2')$value
+t30.pe.3.heights.sd <-
+  subset(sd_heights_df, timepoint == 'T30' &
+           group == 'PE' & well == '3')$value
+
 # Calculate ratios of peak heights
 ctrl.1.heights <- t30.ctrl.1.heights / t0.ctrl.1.heights
 ctrl.2.heights <- t30.ctrl.2.heights / t0.ctrl.2.heights
